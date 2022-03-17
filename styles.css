@@ -97,9 +97,9 @@ header li a:hover {
 	align-items: center;
 	box-shadow: 2px 2px;
 	border-radius: 10px;
+	border-style: solid;
 	width: 330px;
 	height: 200px;
-	border-style: solid;
 }
 
 .home .info-blokken .blok .titel {
@@ -116,6 +116,20 @@ header li a:hover {
 }
 
 .home .info-blokken .blok .blok-link {
+	text-decoration: none;
+	text-align: center;
+	padding: 15px;
+	width: 120px;
+	color: white;
+	background-color: black;
+	border-style: solid;
+	margin-top: 40px;
+	transition: background-color 0.8s, color 0.8s;
+}
+
+.home .info-blokken .blok .blok-link:hover {
+	color: black;
+	background-color: white;
 }
 
 .home .info-blokken .blok table {
@@ -130,6 +144,84 @@ header li a:hover {
 
 .home .info-blokken .blok table td {
 	text-align: center;
+}
+
+.home .menu {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.home .menu .categories ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.home .menu .categories li {
+	margin: 20px;
+}
+
+.home .menu .categories ul li button {
+	background-color: transparent;
+	border-style: none;
+	font-size: 20px;
+}
+
+.home .menu .selected_catagorie {
+	border-bottom-style: solid !important;
+	border-color: #fd3a54 !important;
+}
+
+.home .menu .categories ul li button:hover {
+	cursor: pointer;
+}
+
+.home .menu .items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/* width: 80%; */
+}
+
+.home .menu .items .item {
+	width: 30%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 2px;
+	border-radius: 10px;
+	border-style: solid;
+	align-items: center;
+	margin: 10px;
+}
+
+.home .menu .items .item .titel {
+	font-size: 25px;
+}
+
+.home .menu .items .item img {
+	width: 80%;
+	height: 60%;
+}
+
+.home .menu .items .item .bottom {
+	margin-top: 5px;
+
+	display: flex;
+}
+
+.home .menu .items .item .bottom p {
+	font-size: 20px;
+	margin-right: 15px;
+}
+
+.home .menu .items .item button {
+	color: white;
+	background-color: black;
+	border: none;
+	width: 100px;
 }
 
 .home footer {
