@@ -53,4 +53,6 @@
 			</form>
 		</main>
 	</body>
+
+	<script src="script_solliciteer.js"></script>
 </html>
