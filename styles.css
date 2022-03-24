@@ -5,16 +5,15 @@
 	font-family: "Oswald", sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /* Header */
 
 header {
 	width: 100%;
-	display: flex;
-	align-items: center;
 	background-color: transparent;
-	border-bottom-style: solid;
-	border-color: #fd3a54;
-	height: 70px;
 }
 
 header .links {
@@ -25,13 +24,21 @@ header .links {
 }
 
 header .logo-header {
-	width: 150px;
+	position: fixed;
+	z-index: 10;
 	margin: 10px;
+}
+
+header .header-img {
+	width: 150px;
 }
 
 header .winkel-karretje {
 	width: 60px;
 	margin-right: 10px;
+	position: fixed;
+	right: 5px;
+	margin-top: 5px;
 }
 
 header ul {
@@ -204,6 +211,7 @@ header li a:hover {
 .home .menu .items .item img {
 	width: 80%;
 	height: 60%;
+	object-fit: cover;
 }
 
 .home .menu .items .item .bottom {
@@ -250,4 +258,67 @@ header li a:hover {
 .home footer a {
 	text-decoration: none;
 	color: #fd3a54;
+}
+
+/* Solliciteer */
+.solliciteer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url("https://images.pexels.com/photos/1583891/pexels-photo-1583891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+	background-size: cover;
+}
+
+.solliciteer .titel {
+	margin-top: 100px;
+	color: #fd3a54;
+	font-size: 55px;
+}
+
+.solliciteer form {
+	display: flex;
+	flex-direction: column;
+}
+
+.solliciteer form .col-1,
+.solliciteer form .col-2 {
+	display: flex;
+}
+
+.solliciteer .text-label input {
+	width: 500px;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.solliciteer .text-label {
+	display: flex;
+	flex-direction: column;
+	color: #fd3a54;
+	margin: 10px;
+}
+
+.solliciteer .text-label textarea {
+	resize: none;
+	height: 300px;
+	font-size: 18px;
+	padding: 5px;
+}
+
+.solliciteer form .submit {
+	margin: 10px;
+	width: 145px;
+	font-size: 20px;
+	color: #fd3a54;
+	border-color: #fd3a54;
+	border-style: solid;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: white;
+}
+
+.solliciteer .winkel-karretje {
+	display: none;
 }
