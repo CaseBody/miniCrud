@@ -9,6 +9,14 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* Footer */
+footer {
+	width: 100%;
+	color: #fd3a54;
+	display: flex;
+	justify-content: center;
+}
+
 /* Header */
 
 header {
@@ -232,34 +240,6 @@ header li a:hover {
 	width: 100px;
 }
 
-.home footer {
-	bottom: 0px;
-	position: absolute;
-	width: 100%;
-	height: 60px;
-	background-color: transparent;
-	display: flex;
-}
-
-.home footer ul {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	list-style: none;
-}
-
-.home footer li {
-	margin: 20px;
-	font-size: 25px;
-	color: #fd3a54;
-}
-
-.home footer a {
-	text-decoration: none;
-	color: #fd3a54;
-}
-
 /* Solliciteer */
 .solliciteer {
 	display: flex;
@@ -269,6 +249,11 @@ header li a:hover {
 	height: 100vh;
 	background-image: url("https://images.pexels.com/photos/1583891/pexels-photo-1583891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 	background-size: cover;
+}
+
+.solliciteer footer {
+	position: fixed;
+	bottom: 0;
 }
 
 .solliciteer .titel {
@@ -321,4 +306,98 @@ header li a:hover {
 
 .solliciteer .winkel-karretje {
 	display: none;
+}
+
+/* Admin Home Page */
+.admin_panel .winkel-karretje {
+	display: none;
+}
+
+.admin_panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.admin_panel .titel {
+	margin: 5px;
+	font-size: 45px;
+}
+
+.admin_panel .buttons {
+	display: flex;
+	width: 60%;
+	justify-content: space-evenly;
+}
+
+.admin_panel .buttons a {
+	margin-top: 100px;
+	text-decoration: none;
+	text-align: center;
+	padding: 15px;
+	width: 250px;
+	font-size: 25px;
+	color: black;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;
+}
+
+.admin_panel table {
+	margin-top: 100px;
+	border-collapse: collapse;
+	width: 80%;
+}
+
+.admin_panel td,
+.admin_panel th {
+	border-style: solid;
+	border-radius: 5px;
+	text-align: left;
+	padding: 8px;
+}
+
+.admin_panel tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.bewerk_panel .item_bewerk {
+	padding: 20px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+.bewerk_panel {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.bewerk_panel .label-item {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	font-size: 25px;
+}
+
+.bewerk_panel .label-item input[type="text"],
+.bewerk_panel .label-item select {
+	font-size: 23px;
+	width: 400px;
+}
+
+#submit,
+#delete {
+	background-color: transparent;
+	border-color: black;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px;
+	width: 150px;
+	margin-left: 10px;
 }

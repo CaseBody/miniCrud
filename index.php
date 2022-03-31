@@ -17,7 +17,7 @@
 	<body class="home">
 		<main>
 			<?php 	
-				include_once("header.php");
+				include_once("includes/header.php");
 				require_once("includes/connect.php");
 				/**
 				 * @var PDO $connect
@@ -28,6 +28,7 @@
 				$stmt->execute();
 				$result = $stmt->fetchAll();
 			?>
+
 			<div class="content">
 				<p class="titel">Welkom bij cafetaria Cicek in Nijmegen</p>
 			</div>
@@ -127,6 +128,11 @@
 				?>
 			</div>
 		</div>
+
+		<?php 
+			include_once("includes/footer.php");
+		?>
+
 	</body>
 
 	<script
