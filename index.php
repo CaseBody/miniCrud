@@ -17,16 +17,16 @@
 	<body class="home">
 		<main>
 			<?php 	
-				include_once("includes/header.php");
-				require_once("includes/connect.php");
-				/**
-				 * @var PDO $connect
-				 */
+				// include_once("includes/header.php");
+				// require_once("includes/connect.php");
+				// /**
+				//  * @var PDO $connect
+				//  */
 
-				$sql = "SELECT * FROM MENU WHERE Categorie='Vleesgerechten'";
-				$stmt = $connect->prepare($sql);
-				$stmt->execute();
-				$result = $stmt->fetchAll();
+				// $sql = "SELECT * FROM MENU WHERE Categorie='Vleesgerechten'";
+				// $stmt = $connect->prepare($sql);
+				// $stmt->execute();
+				// $result = $stmt->fetchAll();
 			?>
 
 			<div class="content">
