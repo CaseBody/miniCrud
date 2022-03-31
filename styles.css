@@ -12,9 +12,13 @@ html {
 /* Footer */
 footer {
 	width: 100%;
-	color: #fd3a54;
+	height: 5vh;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	color: #fd3a54;
+	border-top: 1px solid #fd3a54;
 }
 
 /* Header */
