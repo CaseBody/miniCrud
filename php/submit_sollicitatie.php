@@ -5,7 +5,7 @@
 * like storing data in database
 */
  
-require_once("includes/connect.php");
+require_once("../includes/connect.php");
 /**
 * @var PDO $connect
 */

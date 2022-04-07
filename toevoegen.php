@@ -30,18 +30,7 @@
 				<form action="">
 					<div class="label-item">
 						<label for="naam">Product Naam</label>
-						<select name="naam" id="naam">
-							<?php 
-                            foreach ($result as $res){
-                                ?>
-
-							<option value="<?php echo $res["ID"] ?>"><?php echo $res["titel"] ?></option>
-							<?php 
-
-                            }
-
-                            ?>
-						</select>
+						<input type="text" name="naam" id="naam" />
 					</div>
 					<div class="label-item">
 						<label for="afbeelding">Afbeelding</label>
@@ -55,9 +44,8 @@
 						<label for="categorie">Categorie</label>
 						<input type="text" name="categorie" id="categorie" />
 					</div>
-					<div class="buttons">
-                        <input id="submit" type="submit" value="Wijzig">
-                        <button id="delete">Verwijder</button>
+					<div class="buttons toevoegen">
+                        <input id="submit" type="submit" value="Toevoegen">
                     </div>
 					<div class="label-item">
 						<label   id="status_text">Item is bij gewerkt</label>
@@ -69,6 +57,6 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
-		<script src="js/script_bewerk.js"></script>
+		<script src="js/script_toevoegen.js"></script>
 	</body>
 </html>

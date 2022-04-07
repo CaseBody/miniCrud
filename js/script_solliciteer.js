@@ -19,7 +19,7 @@ submit_button.addEventListener("click", (e) => {
 
 	$.ajax({
 		type: "POST",
-		url: "submit_sollicitatie.php",
+		url: "php/submit_sollicitatie.php",
 		data: {
 			naam: naam_input.value,
 			email: email_input.value,

@@ -1,3 +1,7 @@
+<?php 
+	include_once("includes/session.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -23,8 +27,10 @@
 			$stmt = $connect->prepare($sql); $stmt->execute(); $result = $stmt->fetchAll(); ?>
 
 		<p class="titel">Cicek Admin Panel</p>
+		<p class="titel">Welkom terug <?php echo $_SESSION["name"] ?></p>
 		<div class="buttons">
-			<a href="">Nieuw item toevoegen</a>
+			<a href="toevoegen.php">Nieuw item toevoegen</a>
+			<a href="gebruikers.php">Gebruikers beheren</a>
 			<a href="bewerk.php">Item bewerken</a>
 		</div>
 		<table>

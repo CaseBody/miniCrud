@@ -5,14 +5,14 @@
 * like storing data in database
 */
  
-require_once("includes/connect.php");
+require_once("../includes/connect.php");
 /**
 * @var PDO $connect
 */
 
-$sql = 'SELECT * FROM MENU WHERE Categorie=:categorie';
+$sql = 'SELECT * FROM MENU WHERE ID=:id';
 $stmt = $connect->prepare($sql);
-$stmt->bindParam(":categorie", $_POST["categorie"]);
+$stmt->bindParam(":id", $_POST["id"]);
 $stmt->execute();
 $result = $stmt->fetchAll();
  

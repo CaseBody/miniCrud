@@ -44,7 +44,7 @@ function categorieClicked(e) {
 
 	$.ajax({
 		type: "POST",
-		url: "get_catagorie.php",
+		url: "php/get_catagorie.php",
 		data: {
 			categorie: categorie,
 		},
