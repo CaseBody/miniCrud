@@ -21,6 +21,9 @@
 		/>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
+	<?php 	
+		include_once("includes/header.php");
+	?>
 	<body class="login">
 		<form action="authenticate.php" method="post">
 			<p>Login</p>
