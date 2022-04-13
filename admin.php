@@ -27,12 +27,13 @@
 			$stmt = $connect->prepare($sql); $stmt->execute(); $result = $stmt->fetchAll(); ?>
 
 		<p class="titel">Cicek Admin Panel</p>
-		<p class="titel">Welkom terug <?php echo $_SESSION["name"] ?></p>
+		<p class="titel">Welkom terug <span style="font-size: bold;"><?php echo $_SESSION["name"] ?><span></p>
 		<div class="buttons">
 			<a href="toevoegen.php">Nieuw item toevoegen</a>
 			<a href="gebruikers.php">Gebruikers beheren</a>
 			<a href="bewerk.php">Item bewerken</a>
 		</div>
+		<input class="search_bar" type="text" name="" placeholder="Zoeken op naam..." id="search_bar">
 		<table>
 			<tr>
 				<th>ID</th>
@@ -45,7 +46,7 @@
 				foreach ($result as $res)
 				{
 					?>
-			<tr>
+			<tr id="table_row">
 				<td><?php echo $res["ID"] ?></td>
 				<td><?php echo $res["titel"] ?></td>
 				<td><?php echo $res["image_link"] ?></td>
@@ -58,4 +59,5 @@
 			?>
 		</table>
 	</body>
+	<script src="js/script_admin.js"></script>
 </html>

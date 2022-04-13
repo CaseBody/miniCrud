@@ -21,23 +21,26 @@
 		/>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
-	<?php 	
-		include_once("includes/header.php");
-	?>
+
 	<body class="login">
-		<form action="authenticate.php" method="post">
-			<p>Login</p>
-			<div class="label-input">
-				<label for="">Gebruikersnaam</label>
-				<input type="text" name="username" id="username" />
-			</div>
+		<?php 	
+		include_once("includes/header.php");
+		?>
+		<main>
+			<form action="authenticate.php" method="post">
+				<p>Login</p>
+				<div class="label-input">
+					<label for="">Gebruikersnaam</label>
+					<input type="text" name="username" id="username" />
+				</div>
 
-			<div class="label-input">
-				<label for="">Wachtwoord</label>
-				<input type="text" name="password" id="password" />
-			</div>
+				<div class="label-input">
+					<label for="">Wachtwoord</label>
+					<input type="text" name="password" id="password" />
+				</div>
 
-			<input type="submit" value="Login" />
-		</form>
+				<input type="submit" value="Login" />
+			</form>
+		</main>
 	</body>
 </html>

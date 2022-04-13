@@ -32,15 +32,13 @@
 			<div class="content">
 				<p class="titel">Welkom bij cafetaria Cicek in Nijmegen</p>
 			</div>
-			<!-- <footer>
+
+			<div class="winkel-mand" id="winkel-mand">
+				<p id="totaal_bedrag">Totaal: € 0.00</p>
 				<ul>
-					<li><a href="">Telefoon nummer</a></li>
-					<li><p>-</p></li>
-					<li><a href="">Email</a></li>
-					<li><p>-</p></li>
-					<li><a href="">Adres</a></li>
 				</ul>
-			</footer> -->
+			</div>
+
 		</main>
 
 		<div class="info-blokken">
@@ -115,7 +113,7 @@
 					foreach ($result as $res)
 					{
 						?>
-						<div class="item">
+						<div id="<?php echo $res["ID"] ?>" class="item">
 							<p class="titel"><?php echo $res['titel']?></p>
 							<img src="<?php echo $res["image_link"] ?>" alt="" />
 							<div class="bottom">
